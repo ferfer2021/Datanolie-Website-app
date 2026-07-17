@@ -1,0 +1,11 @@
+{
+  "name": "datanolie-website-app",
+  "private": true,
+  "scripts": {
+    "cf:dev": "wrangler pages dev .",
+    "cf:deploy": "wrangler pages deploy ."
+  },
+  "devDependencies": {
+    "wrangler": "^4.26.0"
+  }
+}

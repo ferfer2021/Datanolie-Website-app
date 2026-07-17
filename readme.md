@@ -4,7 +4,6 @@
 
 ## 已添加的配置
 
-- 本地调试和手动部署脚本: `package.json`
 - Node/Cloudflare 本地文件忽略: `.gitignore`
 
 ## Cloudflare 侧准备
@@ -12,11 +11,20 @@
 1. 在 Cloudflare Dashboard 进入 Pages，点击 Create a project。
 2. 选择 Connect to Git，授权并选择本仓库。
 3. Build settings 使用静态站配置:
-	- Framework preset: None
-	- Build command: 留空
-	- Build output directory: /
+   - Framework preset: None
+   - Build command: 留空
+   - Build output directory: .
 4. Production branch 选择 `main` 或 `master`。
 5. 完成后，后续每次 push 会自动部署，Pull Request 会生成预览。
+
+## 遇到日志里这种报错时的修复
+
+如果日志出现 `Executing user deploy command: npx wrangler deploy` 或 `Asset too large`:
+
+1. 到 Cloudflare Pages 项目 `Settings -> Builds & deployments`。
+2. 把 Build command 清空（不要用 `npx wrangler deploy`）。
+3. 把 Build output directory 设为 `.`。
+4. 保存后点击 `Retry deployment` 或重新 push 一次。
 
 ## 什么时候才需要 GitHub Secrets
 
@@ -25,26 +33,6 @@
 - CF_API_TOKEN
 - CF_ACCOUNT_ID
 - CF_PAGES_PROJECT
-
-## 本地命令
-
-安装依赖:
-
-```bash
-npm install
-```
-
-本地预览:
-
-```bash
-npm run cf:dev
-```
-
-手动部署（可选）:
-
-```bash
-npm run cf:deploy
-```
 
 ## 说明
 

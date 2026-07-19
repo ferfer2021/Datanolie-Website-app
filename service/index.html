@@ -4,7 +4,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
-<title>Service &#8211; DataNoLie</title>
+<title>Product Demos &#8211; DataNoLie</title>
 <meta name='robots' content='max-image-preview:large' />
 		<style>html.sdui-panel-open body:not(.wp-admin){margin-right:400px}html.sdui-panel-open #wpcontent,html.sdui-panel-open #wpfooter{margin-right:400px}html.sdui-panel-open body:not(.wp-admin):not(.block-editor-page) header.wp-block-template-part{right:400px}#sdui-panel-placeholder{display:none;position:fixed;right:0;top:var(--wp-admin--admin-bar--height,32px);width:400px;height:calc(100dvh - var(--wp-admin--admin-bar--height,32px));background:linear-gradient(135deg,#1a1230 0%,#110c1d 100%);z-index:99999}html.sdui-panel-open #sdui-panel-placeholder{display:block}@media(max-width:768px){html.sdui-panel-open body:not(.wp-admin),html.sdui-panel-open #wpcontent,html.sdui-panel-open #wpfooter{margin-right:0}html.sdui-panel-open #sdui-panel-placeholder{display:none}}</style>
 		<script>try{if(!document.documentElement.classList.contains('sdui-panel-open')&&localStorage.getItem('site-designer-ui-panel-open')==='true'){document.documentElement.classList.add('sdui-panel-open');document.cookie='sdui_panel_open=1;path=/;max-age=31536000;SameSite=Lax;Secure';document.addEventListener('DOMContentLoaded',function(){if(!document.getElementById('sdui-panel-placeholder')){var p=document.createElement('div');p.id='sdui-panel-placeholder';document.body.appendChild(p)}})}}catch(e){}</script>
@@ -404,8 +404,8 @@ video {
 					<ul id="menu-main-menu" class="nav navbar-nav"><li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-27"><a href="../">Home</a></li>
 <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="../about/index.html">About</a></li>
 <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="../contactus/index.html">Contact</a></li>
-<li id="menu-item-165" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3 current_page_item menu-item-165"><a href="../service/index.html" aria-current="page">Service</a></li>
-<li id="menu-item-179" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-179"><a href="../external/linkedin.html">Linkedin</a></li>
+<li id="menu-item-165" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3 current_page_item menu-item-165"><a href="../service/index.html" aria-current="page">Product Demos</a></li>
+<li id="menu-item-179" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-179"><a href="../external/linkedin.html" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
 </ul>				</nav>
 								</div>
 	</div>
@@ -428,8 +428,8 @@ video {
 					<ul id="menu-main-menu-1" class="nav navbar-nav dropdown sf-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-27"><a href="../">Home</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="../about/index.html">About</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="../contactus/index.html">Contact</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3 current_page_item menu-item-165"><a href="../service/index.html" aria-current="page">Service</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-179"><a href="../external/linkedin.html">Linkedin</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3 current_page_item menu-item-165"><a href="../service/index.html" aria-current="page">Product Demos</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-179"><a href="../external/linkedin.html" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
 </ul>				</nav>
 							</div>
 
@@ -478,21 +478,192 @@ video {
 	<div class="entry-cover-image cover_fixed_height"><div class="single-featured-image-header"><img width="2000" height="1200" src="../wp-content/uploads/2025/07/Untitled-2000-x-1200-px-1.jpg" class="attachment-inspiro-featured-image size-inspiro-featured-image wp-post-image" alt="" decoding="async" srcset="../wp-content/uploads/2025/07/Untitled-2000-x-1200-px-1.jpg 2000w, ../wp-content/uploads/2025/07/Untitled-2000-x-1200-px-1-300x180.jpg 300w, ../wp-content/uploads/2025/07/Untitled-2000-x-1200-px-1-1024x614.jpg 1024w" sizes="100vw" /></div><!-- .single-featured-image-header -->
 	<header class="entry-header">
 
-		<div class="inner-wrap"><h1 class="entry-title">Service</h1></div><!-- .inner-wrap -->
+		<div class="inner-wrap"><h1 class="entry-title">Product Demos</h1></div><!-- .inner-wrap -->
 	</header><!-- .entry-header -->
 
 	</div><!-- .entry-cover-image -->
 	<div class="entry-content">
 		
-<p></p>
+<style>
+.demo-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 18px;
+	margin-top: 24px;
+}
+.demo-card {
+	border: 1px solid #d9d9d9;
+	padding: 18px;
+	background: #fff;
+}
+.demo-card h3 {
+	margin: 0 0 10px;
+	font-size: 20px;
+}
+.demo-card p {
+	margin-bottom: 14px;
+}
+.demo-card button {
+	border: 1px solid #101010;
+	background: transparent;
+	padding: 10px 14px;
+	cursor: pointer;
+	font: inherit;
+}
+.demo-modal {
+	display: none;
+	position: fixed;
+	z-index: 99999;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.72);
+	overflow: auto;
+	padding: 40px 20px;
+}
+.demo-modal__content {
+	background: #fff;
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 24px;
+	position: relative;
+}
+.demo-modal__close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	border: 0;
+	background: transparent;
+	font-size: 28px;
+	cursor: pointer;
+	line-height: 1;
+}
+body.demo-modal-open {
+	overflow: hidden;
+}
+</style>
 
+<p>Explore selected project demos. Click each card to view full details in a popup.</p>
 
+<div class="demo-grid">
+	<div class="demo-card">
+		<h3>Prysmian</h3>
+		<p>AI-powered RAG chatbot for hands-free factory operations and technical support.</p>
+		<button type="button" class="demo-open" data-demo-modal="demo-prysmian">View Details</button>
+	</div>
+	<div class="demo-card">
+		<h3>Floral Pleasure</h3>
+		<p>Online art gallery platform across iOS, Android, and Web with admin portal.</p>
+		<button type="button" class="demo-open" data-demo-modal="demo-floral">View Details</button>
+	</div>
+	<div class="demo-card">
+		<h3>Gallery Elsewhere</h3>
+		<p>Multi-artist creative platform combining digital showcase and real-world events.</p>
+		<button type="button" class="demo-open" data-demo-modal="demo-gallery">View Details</button>
+	</div>
+	<div class="demo-card">
+		<h3>Lapink Skin Lab</h3>
+		<p>AI-powered salon management platform across Web, iOS, and Android.</p>
+		<button type="button" class="demo-open" data-demo-modal="demo-lapink">View Details</button>
+	</div>
+	<div class="demo-card">
+		<h3>Property Intelligence AI</h3>
+		<p>Government-data-driven platform for compliance, risk insights, and document analysis.</p>
+		<button type="button" class="demo-open" data-demo-modal="demo-property">View Details</button>
+	</div>
+</div>
 
-<h2 class="wp-block-heading">Where your data is sent</h2>
+<div id="demo-prysmian" class="demo-modal" aria-hidden="true">
+	<div class="demo-modal__content">
+		<button class="demo-modal__close" type="button" aria-label="Close">&times;</button>
+		<h2>Prysmian - AI-Powered RAG Chatbot for Factory Operations</h2>
+		<p>We built a self-service knowledge base chatbot for Prysmian using Microsoft Power Apps, Azure AI, and Retrieval-Augmented Generation (RAG), designed for manufacturing environments.</p>
+		<p>Factory workers can wear a headset and ask voice questions about machines, equipment, troubleshooting, and operating instructions. Speech is converted to text, processed by Azure AI Speech Services, and matched against enterprise knowledge with RAG. The response is then returned with text-to-speech so workers can stay hands-free.</p>
+		<p><strong>Key Technologies:</strong> Microsoft Power Apps, Azure AI Speech, Azure OpenAI, RAG, enterprise knowledge base integration.</p>
+		<p><strong>Business Benefits:</strong> faster troubleshooting, lower downtime, better knowledge consistency, and improved safety through voice-first workflows.</p>
+	</div>
+</div>
 
+<div id="demo-floral" class="demo-modal" aria-hidden="true">
+	<div class="demo-modal__content">
+		<button class="demo-modal__close" type="button" aria-label="Close">&times;</button>
+		<h2>Floral Pleasure - Online Art Gallery Platform</h2>
+		<p>Floral Pleasure is a modern digital gallery for Sydney artist Nancy Wang, supporting artwork discovery and purchasing across iOS, Android, and responsive web.</p>
+		<p>Alongside the customer experience, we delivered a management portal for gallery staff to upload artworks, run exhibitions, manage customers and orders, and send promotional announcements.</p>
+		<p><strong>Key Features:</strong> mobile apps, responsive web gallery, secure purchasing, push notifications, real-time content updates, and admin dashboard operations.</p>
+		<p><strong>Technologies:</strong> React Native, Web Application, cloud backend, push notifications, secure payment integration, and CMS.</p>
+	</div>
+</div>
 
+<div id="demo-gallery" class="demo-modal" aria-hidden="true">
+	<div class="demo-modal__content">
+		<button class="demo-modal__close" type="button" aria-label="Close">&times;</button>
+		<h2>Gallery Elsewhere - Multi-Artist Creative Platform</h2>
+		<p>Gallery Elsewhere connects artists, collectors, and creative professionals through a web platform that combines digital portfolios with physical community events.</p>
+		<p>Artists manage and publish artworks while audiences discover collections, follow creators, and stay updated on exhibitions, networking events, DJ performances, and urban art activations.</p>
+		<p><strong>Key Features:</strong> multi-artist content management, artist profile pages, artwork discovery, event announcements, and responsive web support.</p>
+	</div>
+</div>
 
-<p><strong class="privacy-policy-tutorial">Suggested text: </strong>Visitor comments may be checked through an automated spam detection service.</p>
+<div id="demo-lapink" class="demo-modal" aria-hidden="true">
+	<div class="demo-modal__content">
+		<button class="demo-modal__close" type="button" aria-label="Close">&times;</button>
+		<h2>Lapink Skin Lab - AI-Powered Salon Management Platform</h2>
+		<p>Lapink Skin Lab is an end-to-end beauty clinic platform across Web, iOS, and Android, combining AI customer experiences with an operational CRM.</p>
+		<p>The platform includes AI facial simulation, appointment booking, membership and account management, payment workflows, timeline-based transaction history, and notification automation.</p>
+		<p><strong>Salon-side capabilities:</strong> role and staff management, service configuration, drag-and-drop calendar operations, reporting dashboards, and customer communication workflows.</p>
+	</div>
+</div>
+
+<div id="demo-property" class="demo-modal" aria-hidden="true">
+	<div class="demo-modal__content">
+		<button class="demo-modal__close" type="button" aria-label="Close">&times;</button>
+		<h2>Property Intelligence AI</h2>
+		<p>Property Intelligence AI helps property owners and professionals make better decisions using trusted government data, legal document intelligence, and AI-powered risk insights.</p>
+		<p>The platform combines compliance data, fire order monitoring, legal and tribunal analysis, RAG-powered document Q&amp;A, builder intelligence checks, and blockchain-backed document timestamping.</p>
+		<p><strong>Technologies:</strong> Azure AI, Azure OpenAI, LLMs, RAG, government data integration, blockchain verification, and secure cloud web architecture.</p>
+	</div>
+</div>
+
+<script>
+(function () {
+	var openButtons = document.querySelectorAll('.demo-open');
+	var closeButtons = document.querySelectorAll('.demo-modal__close');
+	var modals = document.querySelectorAll('.demo-modal');
+
+	function closeAll() {
+		modals.forEach(function (modal) {
+			modal.style.display = 'none';
+			modal.setAttribute('aria-hidden', 'true');
+		});
+		document.body.classList.remove('demo-modal-open');
+	}
+
+	openButtons.forEach(function (btn) {
+		btn.addEventListener('click', function () {
+			var modalId = btn.getAttribute('data-demo-modal');
+			var modal = document.getElementById(modalId);
+			if (!modal) return;
+			closeAll();
+			modal.style.display = 'block';
+			modal.setAttribute('aria-hidden', 'false');
+			document.body.classList.add('demo-modal-open');
+		});
+	});
+
+	closeButtons.forEach(function (btn) {
+		btn.addEventListener('click', closeAll);
+	});
+
+	modals.forEach(function (modal) {
+		modal.addEventListener('click', function (event) {
+			if (event.target === modal) closeAll();
+		});
+	});
+
+	document.addEventListener('keydown', function (event) {
+		if (event.key === 'Escape') closeAll();
+	});
+})();
+</script>
 	</div><!-- .entry-content -->
 </article><!-- #post-3 -->
 

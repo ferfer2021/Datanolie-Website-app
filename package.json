@@ -1,14 +1,5 @@
 {
   "name": "datanolie-website-app",
   "version": "1.0.0",
-  "private": true,
-
-  "scripts": {
-    "deploy": "wrangler deploy",
-    "dev": "wrangler dev"
-  },
-
-  "devDependencies": {
-    "wrangler": "^4.111.0"
-  }
+  "private": true
 }

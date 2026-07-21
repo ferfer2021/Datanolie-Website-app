@@ -490,9 +490,14 @@ video {
 		</a>
 	</p>
 
+<div id="contact-form-status" aria-live="polite" style="max-width:760px;"></div>
 
-
-<form action="#" method="post" class="wpcf7-form" style="max-width:760px;">
+<form action="./send" method="post" class="wpcf7-form" style="max-width:760px;">
+	<p style="display:none !important;">
+		<label>Website
+			<input type="text" name="website" tabindex="-1" autocomplete="off" />
+		</label>
+	</p>
 	<p>
 		<label>Name *<br />
 			<input type="text" name="name" required />
@@ -594,6 +599,24 @@ video {
 		<input type="submit" value="Request a Free Consultation" />
 	</p>
 </form>
+
+<script>
+(function () {
+	var statusBox = document.getElementById('contact-form-status');
+	if (!statusBox) {
+		return;
+	}
+
+	var params = new URLSearchParams(window.location.search);
+	var status = params.get('mail_status');
+
+	if (status === 'sent') {
+		statusBox.innerHTML = '<p style="padding:12px 14px;border:1px solid #2f8f46;background:#edf8f0;color:#1d5d2d;border-radius:4px;">Thanks, your message has been sent successfully.</p>';
+	} else if (status === 'failed') {
+		statusBox.innerHTML = '<p style="padding:12px 14px;border:1px solid #c64545;background:#fff0f0;color:#842020;border-radius:4px;">Sorry, we could not send your message. Please try again or email ferres@datanolie.com.au directly.</p>';
+	}
+})();
+</script>
 	</div><!-- .entry-content -->
 </article><!-- #post-21 -->
 

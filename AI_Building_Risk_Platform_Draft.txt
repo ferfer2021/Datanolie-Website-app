@@ -1,0 +1,511 @@
+=========================================================
+AI Building Risk Intelligence Platform
+Version 0.1 Draft
+Author: ChatGPT + User
+=========================================================
+
+Project Vision
+==============
+
+Create the world's first AI Building Risk Intelligence Platform.
+
+The platform continuously archives, verifies, and analyzes
+government building enforcement records before they disappear,
+then produces AI-powered risk reports for lenders, insurers,
+developers, investors and property buyers.
+
+Target Markets
+
+• Australia
+• United States
+• United Kingdom
+• Canada
+• Singapore
+
+---------------------------------------------------------
+Problem
+---------------------------------------------------------
+
+Government agencies regularly publish:
+
+• Rectification Orders
+• Fire Orders
+• Stop Work Orders
+• Defect Notices
+• Dangerous Building Notices
+
+However,
+
+• Some records disappear.
+• URLs change.
+• PDFs are removed.
+• Councils use different systems.
+• Data cannot easily be searched.
+
+Financial institutions therefore cannot easily determine
+whether a building has hidden regulatory risks.
+
+---------------------------------------------------------
+Solution
+---------------------------------------------------------
+
+Create an AI platform that
+
+1. Crawls government websites continuously.
+
+2. Stores every document.
+
+3. Creates immutable evidence.
+
+4. Uses AI to summarize every order.
+
+5. Builds Builder Risk Profiles.
+
+6. Produces Building Risk Scores.
+
+---------------------------------------------------------
+Phase 1
+Rectification Orders
+---------------------------------------------------------
+
+Data Source
+
+NSW Building Commission
+
+Example
+
+https://www.nsw.gov.au/departments-and-agencies/building-commission/register-of-building-work-orders
+
+Daily Process
+
+Step 1
+
+Download
+
+• HTML
+• PDF
+• Images
+
+Step 2
+
+Extract
+
+• Builder
+• Address
+• Date
+• Order Number
+• Defects
+• Required Actions
+
+Step 3
+
+Store raw files permanently.
+
+---------------------------------------------------------
+Deleted Government Pages
+---------------------------------------------------------
+
+Government pages sometimes disappear.
+
+Recovery Sources
+
+Wayback Machine
+
+https://web.archive.org
+
+Workflow
+
+Government page deleted
+
+↓
+
+Automatically search Wayback Machine
+
+↓
+
+Recover archived HTML
+
+↓
+
+Recover PDF
+
+↓
+
+Continue showing historical record
+
+Every archived version should be timestamped.
+
+---------------------------------------------------------
+Blockchain Verification
+---------------------------------------------------------
+
+Goal
+
+Prove that government documents existed.
+
+Do NOT store the document itself.
+
+Instead store
+
+SHA256 Hash
+
+Example
+
+Government PDF
+
+↓
+
+SHA256
+
+↓
+
+0xF7A123....
+
+↓
+
+Polygon Blockchain
+
+Benefits
+
+✓ Tamper Proof
+
+✓ Independent
+
+✓ Timestamped
+
+✓ Court Evidence
+
+Suggested Chain
+
+Polygon
+
+or
+
+Ethereum
+
+Large files remain in
+
+AWS S3 Object Lock
+
+---------------------------------------------------------
+Builder Intelligence
+---------------------------------------------------------
+
+AI builds a complete Builder Profile.
+
+For every Builder
+
+Collect
+
+Rectification Orders
+
+↓
+
+ASIC
+
+↓
+
+Company Directors
+
+↓
+
+Related Companies
+
+↓
+
+Historical Defects
+
+↓
+
+Liquidation Records
+
+↓
+
+AI Risk Score
+
+---------------------------------------------------------
+Phoenix / Shell Company Detection
+---------------------------------------------------------
+
+AI searches for
+
+Same director
+
+Same phone number
+
+Same email
+
+Same address
+
+Similar company names
+
+Recently liquidated company
+
+New company created immediately
+
+Repeated defect history
+
+Risk Rating
+
+Low
+
+Medium
+
+High
+
+---------------------------------------------------------
+Phase 2
+Fire Orders
+---------------------------------------------------------
+
+Sources
+
+City of Sydney
+
+Other NSW Councils
+
+Planning Portals
+
+Council PDFs
+
+Problem
+
+Every council website is different.
+
+Traditional scraping becomes expensive.
+
+Solution
+
+Natural Language Web Scraping
+
+LLM understands pages instead of CSS selectors.
+
+AI extracts
+
+Address
+
+Issue Date
+
+Order Number
+
+Fire Defects
+
+Required Works
+
+Status
+
+Completed
+
+Outstanding
+
+Cancelled
+
+---------------------------------------------------------
+Building Timeline
+---------------------------------------------------------
+
+Every property receives a timeline.
+
+Example
+
+2018 Occupation Certificate
+
+↓
+
+2020 Fire Order
+
+↓
+
+2021 Rectification Order
+
+↓
+
+2023 Waterproofing Defects
+
+↓
+
+2024 Lift Defect
+
+↓
+
+Current Status
+
+---------------------------------------------------------
+Risk Score
+---------------------------------------------------------
+
+Overall Risk
+
+Builder Risk
+
+Fire Risk
+
+Structural Risk
+
+Compliance Risk
+
+Insurance Risk
+
+Legal Risk
+
+Finance Risk
+
+Overall Rating
+
+A+
+
+A
+
+B
+
+C
+
+D
+
+High Risk
+
+---------------------------------------------------------
+Customers
+---------------------------------------------------------
+
+Banks
+
+Insurance Companies
+
+Property Funds
+
+Developers
+
+Law Firms
+
+Property Buyers
+
+Government
+
+---------------------------------------------------------
+Future AI Features
+---------------------------------------------------------
+
+AI Due Diligence Report
+
+Builder Reputation Score
+
+Automatic Government Monitoring
+
+Instant Risk Alerts
+
+Portfolio Risk Dashboard
+
+Natural Language Search
+
+Example
+
+"Show all buildings built by Builder X with Fire Orders."
+
+---------------------------------------------------------
+Suggested Architecture
+---------------------------------------------------------
+
+Government Websites
+
+↓
+
+Crawler
+
+↓
+
+Raw Archive
+
+↓
+
+Hash Generator
+
+↓
+
+Blockchain
+
+↓
+
+Object Storage
+
+↓
+
+AI Extraction
+
+↓
+
+Risk Database
+
+↓
+
+API
+
+↓
+
+Dashboard
+
+---------------------------------------------------------
+Technology Stack
+---------------------------------------------------------
+
+Backend
+
+Python
+
+FastAPI
+
+PostgreSQL
+
+ElasticSearch
+
+Redis
+
+Frontend
+
+Next.js
+
+React
+
+Mapbox
+
+AI
+
+GPT
+
+Claude
+
+Gemini
+
+OCR
+
+AWS Textract
+
+Google Document AI
+
+Storage
+
+AWS S3 Object Lock
+
+Blockchain
+
+Polygon
+
+Ethereum
+
+---------------------------------------------------------
+Core Competitive Advantage
+---------------------------------------------------------
+
+1. Government documents are archived before deletion.
+
+2. Blockchain proves authenticity.
+
+3. AI understands every council website.
+
+4. Builder relationships become visible.
+
+5. Banks receive instant building risk reports.
+
+=========================================================
+End Draft
+=========================================================

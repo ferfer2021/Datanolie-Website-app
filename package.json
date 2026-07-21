@@ -1,5 +1,8 @@
 {
   "name": "datanolie-website-app",
   "version": "1.0.0",
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "echo 'static site'"
+  }
 }

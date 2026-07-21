@@ -2,12 +2,13 @@
   "name": "datanolie-website-app",
   "version": "1.0.0",
   "private": true,
-  "description": "Static site server with Node.js contact form submission via Resend",
-  "main": "server.js",
+
   "scripts": {
-    "start": "node server.js"
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
   },
-  "engines": {
-    "node": ">=18"
+
+  "devDependencies": {
+    "wrangler": "^4.111.0"
   }
 }
